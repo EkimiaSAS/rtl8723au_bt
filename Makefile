@@ -13,6 +13,14 @@ else
 
 all:
 	$(MAKE) -C $(KDIR) M=$(PWD) modules
+	@cp -f rtl8723a_fw.bin $(FW_DIR)/.
+	@cp -f rtl8723b_fw.bin $(FW_DIR)/.
+	@cp -f rtl8821a_fw.bin $(FW_DIR)/.
+	@cp -f rtl8761a_fw.bin $(FW_DIR)/.
+	@cp -f rtl8723a_fw.bin $(FW_DIR)/rtl8723a_fw
+	@cp -f rtl8723b_fw.bin $(FW_DIR)/rtl8723b_fw
+	@cp -f rtl8821a_fw.bin $(FW_DIR)/rtl8821a_fw
+	@cp -f rtl8761a_fw.bin $(FW_DIR)/rtl8761a_fw
 
 clean:
 	rm -rf *.o *.mod.c *.mod.o *.ko *.symvers *.order *.a
