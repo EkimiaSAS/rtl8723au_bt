@@ -1,6 +1,7 @@
 FW_DIR	:= /lib/firmware/
 MDL_DIR	:= /lib/modules/$(shell uname -r)
 DRV_DIR	:= $(MDL_DIR)/kernel/drivers/bluetooth
+KVERSION := $(shell uname -r)
 
 ifneq ($(KERNELRELEASE),)
 

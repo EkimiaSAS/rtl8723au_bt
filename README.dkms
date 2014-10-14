@@ -2,13 +2,13 @@
 To get DKMS to work:
 
 - Install dkms
-- Copy this source to the directory /usr/src/8723au-2.11/
+- Copy this source to the directory /usr/src/rtl8x_bt-2.11/
 - Run (as root):
 
-    $ dkms add -m 8723au -v 2.11
+    $ dkms add -m rtl8x_bt -v 2.11
 
 - Test a build:
 
-    $ dkms build -m 8723au -v 2.11
+    $ dkms build -m rtl8x_bt -v 2.11
 
 From now on this drive should be available for any new kernels.
